@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  font-size: 15px;
+}
+
+h2,
+p,
+img,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 3em;
+}
+
+.header p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.header p:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.header p:nth-child(3) {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+  margin-bottom: 2em;
+}
+
+.cards {
+  width: 80%;
+  margin: auto;
+}
+.card {
+  margin-bottom: 1em;
+  padding: 1.5em;
+  box-shadow: 0px 5px 5px 1px lightgrey;
+  border-radius: 5px;
+  display: flex;
+}
+.card p {
+  color: hsl(229, 6%, 66%);
+  margin-top: 1em;
+}
+.card img {
+  align-items: flex-end;
+  margin-top: 8em;
+}
+
+.card1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.card2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.card3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.card4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 960px) {
+  .header {
+    width: 35%;
+  }
+
+  .cards {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 1.5em;
+  }
+  .card {
+    margin-bottom: auto;
+  }
+  .card1 {
+    grid-column: 1/5;
+    grid-row: 1;
+    transform: translateY(10em);
+  }
+  .card2 {
+    grid-column: 5/9;
+    grid-row: 1;
+  }
+
+  .card3 {
+    grid-column: 5/9;
+    grid-row: 2;
+  }
+
+  .card4 {
+    grid-column: 9/13;
+    grid-row: 1;
+    transform: translateY(10em);
+  }
+}
